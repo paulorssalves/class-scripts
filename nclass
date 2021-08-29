@@ -1,0 +1,14 @@
+#/bin/bash
+
+target=$1
+touch $target
+export LANG="en_US.utf8"
+cat $HOME/.bin/template.Rmd > $target
+
+today_date=$(date --date="tomorrow" '+%B %d')
+
+HOME=$(echo $HOME)
+echo $HOME
+sed -i "s/MONTH XXth/$today_date/" $target
+sed -i "s?HOMEDIR?$HOME?" $target
+vim $target

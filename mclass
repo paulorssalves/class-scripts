@@ -1,0 +1,5 @@
+#!/bin/bash
+
+target=$1
+
+Rscript $HOME/.bin/rectify.R $target

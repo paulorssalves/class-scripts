@@ -1,0 +1,9 @@
+---
+title: Master - MONTH XXth, 2021 
+author: 
+date: 
+output:
+  beamer_presentation:
+    includes:
+      in_header: "HOMEDIR/.bin/slide_template.tex"
+---
